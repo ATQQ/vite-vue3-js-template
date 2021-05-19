@@ -1,4 +1,3 @@
-import { RouteRecordRaw } from 'vue-router'
 import Home from '../../pages/home/index.vue'
 import About from '../../pages/about/index.vue'
 import Dynamic from '../../pages/dynamic/index.vue'
@@ -7,7 +6,7 @@ const NotFind = () => import('../../pages/404/index.vue')
 const Index = () => import('../../pages/index/index.vue')
 const Axios = () => import('../../pages/axios/index.vue')
 const Element = () => import('../../pages/element/index.vue')
-const routes: RouteRecordRaw[] = [
+const routes = [
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFind },
   {
     path: '/',

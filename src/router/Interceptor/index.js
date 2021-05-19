@@ -1,15 +1,4 @@
-import { Router } from 'vue-router'
-
-declare module 'vue-router' {
-    interface RouteMeta {
-        // 是可选的
-        isAdmin?: boolean
-        // 是否需要登录
-        requireLogin?: boolean
-    }
-}
-
-function registerRouteGuard(router: Router) {
+function registerRouteGuard(router) {
   /**
      * 全局前置守卫
      */

@@ -4,7 +4,7 @@
         <h2>{{ count }}</h2>
     </div>
 </template>
-<script lang="ts">
+<script>
 import { computed, defineComponent } from 'vue'
 import { useStore } from 'vuex'
 

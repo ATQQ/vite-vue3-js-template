@@ -10,7 +10,7 @@ const instance = axios.create({
 instance.interceptors.request.use((config) => {
   const { method, params } = config
   // 附带鉴权的token
-  const headers: any = {
+  const headers = {
     token: localStorage.getItem('token'),
   }
   // 不缓存get请求

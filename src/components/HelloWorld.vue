@@ -29,7 +29,7 @@
   </p>
 </template>
 
-<script lang="ts">
+<script>
 import { ref, defineComponent,onMounted } from 'vue'
 import { useRoute,useRouter} from 'vue-router'
 export default defineComponent({

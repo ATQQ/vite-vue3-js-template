@@ -3,7 +3,7 @@
         <h1>{{ $route.params.id }}</h1>
     </div>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 
 // import HelloWorld from '../../components/HelloWorld.vue'

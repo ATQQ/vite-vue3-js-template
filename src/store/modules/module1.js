@@ -1,10 +1,4 @@
-import { Module } from 'vuex'
-
-interface State {
-  count: number
-}
-
-const store: Module<State, unknown> = {
+const store= {
   namespaced: true,
   state() {
     return {

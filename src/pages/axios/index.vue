@@ -5,15 +5,14 @@
         <button @click="getCode">获取验证码</button>
     </div>
 </template>
-<script lang="ts">
-import { AxiosInstance } from 'axios'
+<script>
 import { defineComponent, ref, inject } from 'vue'
 import { publicApi } from '../../apis'
 
 export default defineComponent({
   setup() {
     const phone = ref('12345678901')
-    const $http = inject<AxiosInstance>('$http')
+    const $http = inject('$http')
 
     const getCode = () => {
       publicApi.getCode(phone.value).then((v) => {

@@ -1,8 +1,10 @@
 <template>
-  <router-view></router-view>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
@@ -19,11 +21,11 @@ export default defineComponent({
   color: #2c3e50;
   margin-top: 60px;
 }
-a{
+a {
   color: #2c3e50;
   padding: 0 20px;
 }
-.links{
+.links {
   text-align: center;
 }
 </style>

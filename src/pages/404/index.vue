@@ -3,7 +3,7 @@
         <h1>404 not find</h1>
     </div>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 
